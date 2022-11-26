@@ -12,7 +12,7 @@ const Services = () => {
             alt='party at night' />
             <div>
                 <h3>SERVICES</h3>
-                <p>You have a special occasion coming up? Take your party to the next level and hire a professional barkeeper. Get all your and your guests' favorite drinks and discover new longdrinks and cocktails with me!<br/> I work in Freiberg, Leipzig and the surounding area.</p>
+                <p>You have a special occasion coming up? Take your party to the next level and hire a professional barkeeper. Get all your and your guests' favorite drinks and discover new longdrinks and cocktails with me! I work in Freiberg, Leipzig and the surounding area.</p>
             </div>
 
         </section>
