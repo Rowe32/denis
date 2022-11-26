@@ -6,13 +6,13 @@ const About = () => {
     const aboutRef = useNav('About');
 
     return (
-        <section ref={aboutRef} id='aboutContainer'>
+        <section className="middleSection" ref={aboutRef} id='aboutContainer'>
             <img 
             src={DenisAtBar}
-            alt='unsplash drinks' />
+            alt='denis at the bar' />
             <div>
                 <h3>ABOUT</h3>
-                <p>I am a professional barkeeper with 10years of experience working in bars, clubs, at festivals and private events.</p>
+                <p>Hi! My name is Denis Fröbel and I am a professional barkeeper with more than ten years experience working in bars, clubs, at festivals and private events.</p>
             </div>
 
         </section>

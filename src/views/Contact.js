@@ -6,13 +6,24 @@ const Contact = () => {
     const contactRef = useNav('Contact');
 
     return (
-        <section ref={contactRef} id='contactContainer'>
+        <section className="bottomSection" ref={contactRef} id='contactContainer'>
             <img 
             src={Bottles}
-            alt='unsplash drinks' />
-            <div>
-                <h3>Contact</h3>
-                <p>This is the contact section</p>
+            alt='bottles and equipment for cocktails' />
+            <div className="formContainer">
+                <form>
+                    <div className="formTop">
+                        <input type="text" name="name" placeholder='Name'></input>
+                        <input type="email" name="email" placeholder='Email'></input>
+                    </div>
+                    <div className="formBottom">
+                        <input type="text" name="subject" placeholder='Subject'></input>
+                    </div>
+                    <div>
+                        <textarea placeholder='Message'></textarea>
+                    </div>
+                        <button type="submit" value="submit">GET IN TOUCH</button>
+                </form>
             </div>
 
         </section>

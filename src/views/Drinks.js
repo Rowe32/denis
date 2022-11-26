@@ -6,17 +6,18 @@ const Drinks = () => {
     const drinksRef = useNav('Drinks');
 
     return (
-        <section ref={drinksRef} id='drinksContainer'>
+        <section className="middleSection" ref={drinksRef} id='drinksContainer'>
             <img 
             src={specialties}
-            alt='unsplash drinks' />
+            alt='board with handwriting' />
             <div>
-                <h3>My specialties</h3>
-                <p>For conoisseurs: <br/>
+                <h3>SPECIALTIES <span>for conoisseurs</span></h3>
+                <p>
                 Whiskey Sour
-                <br/>Amaretto Sour</p>
+                <br/>Amaretto Sour
+                <br/>Moscow Mule
+                <br/>Espresso Martini</p>
             </div>
-
         </section>
     )
 };

@@ -1,45 +1,133 @@
-/*body {
-	background-color: black;
-}*/
-
 section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	height: 100vh;
-	width: 100%;
-	/*border-bottom: 1px solid lightgrey;*/
-}
-
-section:nth-child(even) {
-	flex-direction: row-reverse;
-}
-
-section img,
-section div {
-	height: auto;
 	width: 100%;
 }
 
 section img {
-	width: 70%;
+	width: 100vw;
+	overflow: hidden;
+}
+/*--------------------------------*/
+
+.topSection {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
 }
 
-section div {
+.topSection div {
+	position: absolute;
+}
+
+
+.header {
+	bottom: 16%;
+	right: 24%;
+	color:white;
+}
+
+.header h3 {
+	font-size: xx-large;
+	font-weight: lighter;
+}
+
+.header p {
+	font-family: 'Magneto', sans-serif;
+	font-size: x-large;
+	margin-top: -22%;/* keine gute Lösung!*/
+	margin-right: -50%;/* keine gute Lösung!*/
+}
+
+/*--------------------------------*/
+
+.middleSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.middleSection div {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	padding: 1em;
 }
 
-@media screen and (max-width: 900px) {
-	section,
-	section:nth-child(even) {
+.middleSection img,
+.middleSection div {
+	height: auto;
+	width: 100%;
+	margin: 2rem;
+}
+
+.middleSection img {
+	width: 35%;
+}
+
+.middleSection div {
+	width: 40%;
+	line-height: 1.3rem;
+}
+
+.middleSection:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.middleSection span {
+	font-family: 'Magneto', sans-serif;
+}
+
+/*--------------------------------*/
+
+.bottomSection {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.formContainer {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+form {
+	position: absolute;
+	z-index: 1000;
+	background: rgba(255,255,255,0.4);
+	padding: 3rem;
+}
+
+.formtop {
+	flex-direction: row;
+}
+
+
+/*--------------------------------*/
+
+@media screen and (max-width: 700px) {
+
+	section img {
+		height: auto;
+		width: auto;
+		max-width: 100vw;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.middleSection,
+	.middleSection:nth-child(even) {
 		flex-direction: column;
 	}
 
-	section img {
+	.middleSection img {
 		height: auto;
 		width: auto;
 		max-width: 100vw;

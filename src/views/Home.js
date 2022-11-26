@@ -5,12 +5,12 @@ const Home = () => {
     const homeRef = useNav('Home');
 
     return (
-        <section ref={ homeRef } id='homeContainer'>
+        <section className="topSection" ref={ homeRef } id='homeContainer'>
             <img
             className="imgHome" 
             src={DenisCloseUp}
             alt='denis-fröbel pouring a cocktail' />
-            <div>
+            <div className="header">
                 <h3>Denis Fröbel</h3>
                 <p>Barkeeper</p>
             </div>
