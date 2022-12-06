@@ -17,15 +17,15 @@ const Contact = () => {
         })
     };
 
+// i dont need the handle submit - it happens in the handleinput
     const handleSubmit = (event) => {
         event.preventDefault();
         setMsgToSave(input);
         setInput({ name: "", email: "", subject: "", message: ""});
-        /**ab hier funktioniert es nicht */
         setHideForm(true);
         setTimeout(() => {
             setHideForm(false);
-            }, 3000);
+            }, 5000);
     }
 
     return (
@@ -54,7 +54,10 @@ const Contact = () => {
                         <textarea placeholder='Message' name="message" value={input.message} onChange={handleInput}></textarea>
                     </div>
                     
-                    <button type="submit" value="submit">GET IN TOUCH</button>
+                    {/*<button type="submit" value="submit">GET IN TOUCH</button>*/}
+                    <button><a href={`mailto: ${input.email}`}>send mail </a></button>
+
+
                 </>)}
                 </form>
             </div>
