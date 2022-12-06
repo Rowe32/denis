@@ -1,6 +1,7 @@
 import { useNav } from '../customHooks/useNav';
 import { useState } from 'react';
 import Bottles from '../assets/Bottles.JPG'
+import { Box, TextField, Button } from '@mui/material';
 import './views.css';
 
 const Contact = () => {
@@ -43,21 +44,18 @@ const Contact = () => {
                 )
                 :
                 (<>
-                    <div className="formTop">
-                        <input type="text" name="name" placeholder='Name' value={input.name} onChange={handleInput}></input>
-                        <input type="email" name="email" placeholder='Email' value={input.email} onChange={handleInput}></input>
-                    </div>
-                    <div className="formBottom">
-                        <input type="text" name="subject" placeholder='Subject' value={input.subject} onChange={handleInput}></input>
-                    </div>
-                    <div>
-                        <textarea placeholder='Message' name="message" value={input.message} onChange={handleInput}></textarea>
-                    </div>
-                    
-                    {/*<button type="submit" value="submit">GET IN TOUCH</button>*/}
-                    <button><a href={`mailto: ${input.email}`}>send mail </a></button>
-
-
+                    <Box
+                    component="form"
+                    sx={{'& > :not(style)': { m: 1, width: '25ch' },}}
+                    noValidate
+                    autoComplete="off">
+                        
+                        <TextField color="" required size="small" id="outlined-basic" label="Name" variant="outlined" value={input.name} onChange={handleInput}/>
+                        <TextField required size="small" id="outlined-basic" label="Email" variant="outlined" value={input.email} onChange={handleInput}/>
+                        <TextField required size="small" id="outlined-basic" label="Subject" variant="outlined" value={input.subject} onChange={handleInput}/>
+                        <TextField required fullWidth id="outlined-multiline-static" label="Message" multiline rows={8} value={input.message} onChange={handleInput} />
+                        <Button variant="contained"><a href={`mailto: ${input.email}`}>GET IN TOUCH</a></Button>
+                    </Box>
                 </>)}
                 </form>
             </div>
