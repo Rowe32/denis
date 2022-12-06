@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import specialties from '../assets/specialties.JPG'
 import './views.css';
 
-const words = ["Whiskey Sour", "Amaretto Sour", "Moscow Mule", "Espresso Martini" ]
+const words = ["Whiskey Sour", "Amaretto Sour", "Moscow Mule", "Espresso Martini"]
 
 const Drinks = () => {
     const drinksRef = useNav('Drinks');
@@ -14,7 +14,7 @@ const Drinks = () => {
     useEffect(()=>{
         if (
             index === words.length - 1 && /* index = end of list */
-            subIndex === words[index].length /* subindex = length of last word */
+            subIndex === words[index].length + 1 /* subindex = length of last word */
         ) {
             setIndex(0);
             setSubIndex(0); /*make it infinite */
@@ -52,7 +52,7 @@ const Drinks = () => {
             alt='board with handwriting' />
             <div>
                 <h3>SPECIALTIES <span className="drink-span">for conoisseurs</span></h3>
-                <p> {" "}
+                <p className="animation">
                     {`${words[index].substring(0, subIndex)}`}
                 </p>
                 <span class="material-symbols-outlined">local_bar</span>
