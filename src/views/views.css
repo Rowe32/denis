@@ -112,7 +112,7 @@ section img {
 form {
 	position: absolute;
 	z-index: 1000;
-	background: rgba(255, 255, 255, 0.507);
+	background: rgba(255, 255, 255, 0.807);
 	padding: 3rem;
 	display: flex;
 	flex-direction: column;

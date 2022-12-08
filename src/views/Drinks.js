@@ -55,7 +55,7 @@ const Drinks = () => {
                 <p className="animation">
                     {`${words[index].substring(0, subIndex)}`}
                 </p>
-                <span class="material-symbols-outlined">local_bar</span>
+                <span className="material-symbols-outlined">local_bar</span>
             </div>
         </section>
     )

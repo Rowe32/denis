@@ -6,7 +6,11 @@ import { styled } from '@mui/material/styles';
 import './views.css';
 
 
-const FormFields = styled(TextField)({
+const FormFields = styled(TextField, {
+    shouldForwardProp: (prop) => !["fieldWidth"].includes(prop),
+})((props) => ({
+    width: props.fieldWidth || '100%',
+    fontFamily: '"Verdana"',
     '& label.Mui-focused': { 
         // Schriftfarbe placeholder
         color: '#282c34',
@@ -17,11 +21,14 @@ const FormFields = styled(TextField)({
         borderColor: '#282c34',
         },
     },
-});
+}));
+
+// inherit from formfields and just style width... for the top input fields
 
 const StyledButton = styled(Button)({
 color: '#282c34',
 backgroundColor: 'rgba(255, 255, 255, 0.807)',
+fontFamily: '"Verdana"',
 '&:hover': {
     // transform fehlt noch
         color: 'rgba(255, 255, 255, 0.807)',
@@ -54,13 +61,13 @@ const Contact = () => {
                 noValidate
                 autoComplete="off">
                     <div className="formTop">
-                     <FormFields required size="small" id="form-name" name="name" label="Name" variant="outlined" value={input.name} onChange={handleInput}/>
-                     <FormFields required size="small" id="form-email" name="email" label="Email" variant="outlined" value={input.email} onChange={handleInput}/>
+                     <FormFields required size="small" fieldWidth='49%' id="form-name" name="name" label="Name" variant="outlined" value={input.name} onChange={handleInput}/>
+                     <FormFields required size="small" fieldWidth='49%' id="form-email" name="email" label="Email" variant="outlined" value={input.email} onChange={handleInput}/>
                     </div>
                     <FormFields required size="small" id="form-subject" name="subject" label="Subject" variant="outlined" value={input.subject} onChange={handleInput}/>
-                    <FormFields required fullWidth id="form-message" name="message" label="Message" multiline rows={6} value={input.message} onChange={handleInput} />
+                    <FormFields required id="form-message" name="message" label="Message" multiline rows={6} value={input.message} onChange={handleInput} />
                     <StyledButton variant="contained" size="small" /*href={`mailto:${input.email}?subject=${input.email}&body=${input.message}`}*/>
-                        GET IN TOUCH {<span class="material-symbols-outlined">send</span>}
+                        GET IN TOUCH {<span className="material-symbols-outlined">send</span>}
                     </StyledButton>
                 </Box>
             </div>
