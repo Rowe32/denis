@@ -104,50 +104,29 @@ section img {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 }
 
 form {
 	position: absolute;
 	z-index: 1000;
-	background: rgba(255,255,255,0.4);
+	background: rgba(255, 255, 255, 0.507);
 	padding: 3rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	border-radius: 2%;
 }
 
 form * {
-	padding: 0.3em;
+	padding: 0.2em;
 }
 
 .formTop {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.formBottom input {
-    width: 95%;
-}
-
-textarea {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    resize: vertical;
-    max-height: 8rem;
-    min-height: 4rem;
-    min-width: 90%;
-}
-
-form button {
-    align-self: center;
-    color: white;
-    background-color: #151515;
-    padding: 0.2em;
 }
 
 
