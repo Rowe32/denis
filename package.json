@@ -1,7 +1,7 @@
 {
   "name": "denis",
   "version": "0.1.0",
-  "homepage": "https://Rowe32/github.io/denis",
+  "homepage": "https://rowe32.github.io/denis",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
