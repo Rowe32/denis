@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/github.io/denis/static/css/main.76afb3d7.css",
+    "main.js": "/github.io/denis/static/js/main.f8efea96.js",
+    "static/media/Bottles.JPG": "/github.io/denis/static/media/Bottles.3b7a101c2ecb4dd71a0f.JPG",
+    "static/media/specialties.JPG": "/github.io/denis/static/media/specialties.07ec42efe02a89e6c797.JPG",
+    "static/media/DenisAtBar.JPG": "/github.io/denis/static/media/DenisAtBar.0376fdabfe89ed20f08e.JPG",
+    "static/media/DenisCloseUp.JPG": "/github.io/denis/static/media/DenisCloseUp.bc321f4720510bd570fe.JPG",
+    "static/media/Feier.jpg": "/github.io/denis/static/media/Feier.b2795977051ed6f371ca.jpg",
+    "index.html": "/github.io/denis/index.html",
+    "main.76afb3d7.css.map": "/github.io/denis/static/css/main.76afb3d7.css.map",
+    "main.f8efea96.js.map": "/github.io/denis/static/js/main.f8efea96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76afb3d7.css",
+    "static/js/main.f8efea96.js"
+  ]
+}
