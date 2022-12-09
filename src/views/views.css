@@ -112,15 +112,15 @@ section img {
 form {
 	position: absolute;
 	z-index: 1000;
-	background: rgba(255, 255, 255, 0.74);
-	padding: 3rem;
+	background: rgba(255, 255, 255, 0.9);
+	padding: 1.7rem;
 	display: flex;
 	flex-direction: column;
 	border-radius: 2%;
 }
 
 form * {
-	padding: 0.2em;
+	padding: 0.1em;
 }
 
 .formTop {
@@ -145,7 +145,7 @@ form * {
 	}
 
 	.middleSection img {
-		height: auto;
+		max-height: 40vh;
 		width: auto;
 		max-width: 100vw;
 	}

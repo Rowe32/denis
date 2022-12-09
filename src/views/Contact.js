@@ -50,6 +50,11 @@ const Contact = () => {
         })
     };
 
+    function handleClick() {
+        window.open(`mailto:denis@froebel.de?subject=${input.subject}&body=${input.message}`, "_blank");
+        setInput({ name: "", email: "", subject: "", message: ""});
+    }
+
     return (
         <section className="bottomSection" ref={contactRef} id='contactContainer'>
             <img 
@@ -68,8 +73,8 @@ const Contact = () => {
                     </div>
                     <FormFields required size="small" id="form-subject" name="subject" label="Subject" variant="outlined" value={input.subject} onChange={handleInput}/>
                     <FormFields required id="form-message" name="message" label="Message" multiline rows={6} value={input.message} onChange={handleInput} />
-                    <StyledButton variant="contained" size="small" onClick={()=> window.open(`mailto:denis@froebel.de?subject=${input.subject}&body=${input.message}`, "_blank")}>
-                        GET IN TOUCH {<span className="material-symbols-outlined">send</span>}
+                    <StyledButton variant="contained" size="small" onClick={handleClick}>
+                        GET IN TOUCH {<span className="material-symbols-outlined">Liquor</span>}
                     </StyledButton>
                 </Box>
             </div>
