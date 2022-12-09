@@ -1,12 +1,13 @@
 import { useNav } from '../customHooks/useNav';
 import { useState } from 'react';
 import Bottles from '../assets/Bottles.JPG'
-import { Box, TextField, Button, formControlClasses } from '@mui/material';
+import { Box, TextField, Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import './views.css';
 
 
 const FormFields = styled(TextField, {
+    //to prevent passing info down to html
     shouldForwardProp: (prop) => !["fieldWidth"].includes(prop),
 })((props) => ({
     width: props.fieldWidth || '100%',
@@ -26,13 +27,14 @@ const FormFields = styled(TextField, {
 // inherit from formfields and just style width... for the top input fields
 
 const StyledButton = styled(Button)({
-color: '#282c34',
-backgroundColor: 'rgba(255, 255, 255, 0.807)',
+color: 'rgba(255, 255, 255, 0.807)',
+backgroundColor: '#151515',
 fontFamily: '"Verdana"',
 '&:hover': {
-    // transform fehlt noch
-        color: 'rgba(255, 255, 255, 0.807)',
-        backgroundColor: '#282c34',
+        color: '#151515',
+        backgroundColor: 'rgba(255, 255, 255, 0.807)',
+        border: '1px solid',
+        borderColor: '#151515',
     },
 });
 
@@ -66,7 +68,7 @@ const Contact = () => {
                     </div>
                     <FormFields required size="small" id="form-subject" name="subject" label="Subject" variant="outlined" value={input.subject} onChange={handleInput}/>
                     <FormFields required id="form-message" name="message" label="Message" multiline rows={6} value={input.message} onChange={handleInput} />
-                    <StyledButton variant="contained" size="small" /*href={`mailto:${input.email}?subject=${input.email}&body=${input.message}`}*/>
+                    <StyledButton variant="contained" size="small" onClick={()=> window.open(`mailto:denis@froebel.de?subject=${input.subject}&body=${input.message}`, "_blank")}>
                         GET IN TOUCH {<span className="material-symbols-outlined">send</span>}
                     </StyledButton>
                 </Box>
