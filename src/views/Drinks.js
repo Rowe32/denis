@@ -11,7 +11,8 @@ const words = [
 ];
 
 const Drinks = () => {
-  const drinksRef = useNav("Drinks");
+  const drinksRef = useNav("Drinks"); // containerRef to scroll element into viewport
+
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);

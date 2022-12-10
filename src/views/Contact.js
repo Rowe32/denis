@@ -41,7 +41,7 @@ const StyledButton = styled(Button)({
 });
 
 const Contact = () => {
-  const contactRef = useNav("Contact");
+  const contactRef = useNav("Contact"); // containerRef to scroll element into viewport
 
   const [errorMessage, setErrorMessage] = useState("");
   const [input, setInput] = useState({

@@ -3,7 +3,7 @@ import DenisAtBar from "../assets/DenisAtBar.JPG";
 import "./views.css";
 
 const About = () => {
-  const aboutRef = useNav("About");
+  const aboutRef = useNav("About"); // containerRef to scroll element into viewport
 
   return (
     <section className="middleSection" ref={aboutRef} id="aboutContainer">

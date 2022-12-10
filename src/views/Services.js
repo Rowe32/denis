@@ -3,7 +3,7 @@ import Feier from "../assets/Feier.jpg";
 import "./views.css";
 
 const Services = () => {
-  const servicesRef = useNav("Services");
+  const servicesRef = useNav("Services"); // containerRef to scroll element into viewport
 
   return (
     <section className="middleSection" ref={servicesRef} id="servicesContainer">

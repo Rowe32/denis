@@ -2,7 +2,7 @@ import { useNav } from "../customHooks/useNav";
 import DenisCloseUp from "../assets/DenisCloseUp.JPG";
 
 const Home = () => {
-  const homeRef = useNav("Home");
+  const homeRef = useNav("Home"); // containerRef to scroll element into viewport
 
   return (
     <section className="topSection" ref={homeRef} id="homeContainer">
