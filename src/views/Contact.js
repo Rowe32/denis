@@ -11,6 +11,10 @@ const FormFields = styled(TextField, {
   shouldForwardProp: (prop) => !["fieldWidth"].includes(prop),
 })((props) => ({
   width: props.fieldWidth || "100%",
+  // wird nicht ausgelesen...
+  // [props.theme.breakpoints.up("sm")]: {
+  //   width: '100%',
+  // },
   fontFamily: '"Verdana"',
   "& label.Mui-focused": {
     // color label aka placeholder on focus

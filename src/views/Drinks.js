@@ -57,7 +57,7 @@ const Drinks = () => {
     <section className="middleSection" ref={drinksRef} id="drinksContainer">
       <img src={specialties} alt="board with handwriting" />
       <div>
-        <h3>
+        <h3 className="specialties-header">
           SPECIALTIES <span className="drink-span">for conoisseurs</span>
         </h3>
         <p className="animation">{`${words[index].substring(0, subIndex)}`}</p>

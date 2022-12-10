@@ -34,6 +34,8 @@ section img {
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
+	width: 40%;
+	line-height: 1.3rem;
 }
 
 .middleSection img,
@@ -45,11 +47,6 @@ section img {
 
 .middleSection img {
 	width: 35%;
-}
-
-.middleSection div {
-	width: 40%;
-	line-height: 1.3rem;
 }
 
 .middleSection:nth-child(even) {
@@ -116,6 +113,12 @@ form * {
 /*--------------------------------*/
 
 @media screen and (max-width: 750px) {
+
+	section {
+		height: auto;
+		width: 100%;
+	}
+
 	section img {
 		height: auto;
 		width: auto;
@@ -124,12 +127,64 @@ form * {
 
 	.middleSection,
 	.middleSection:nth-child(even) {
-		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+
+	.middleSection div {
+		/* line-height: 1em; */
+		width: 70%;
+		margin-bottom: 0;
+	}
+
+	.middleSection h3 {
+		font-size: 18px;
+		margin-bottom: 0;
+	}
+
+	.specialties-header {
+		margin-top: 8vh;
+	}
+
+	.drink-span {
+		font-size: 15px;
+	}
+
+	.animation {
+		margin: 6vh;
+	}
+
+	.middleSection p {
+		font-size: 15px;
 	}
 
 	.middleSection img {
-		max-height: 40vh;
-		width: auto;
-		max-width: 100vw;
+		/* max-height: 30vh;
+		width: auto; */
+		width: 100vw;
+		height: auto;
+		
 	}
+
+	/* ----- FORM ------ */
+	
+	.bottomSection {
+		flex-direction: column-reverse;
+	}
+	
+	.formContainer {
+		transform: none;
+		position: inherit;
+	
+	}
+
+	form {
+		position: inherit;
+		z-index: inherit;
+
+	}
+
+	/* .formTop {
+		flex-direction: column;
+	} */
 }
+
