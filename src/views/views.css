@@ -13,29 +13,12 @@ section img {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
+	background-color: #151515;
 }
+
 
 .topSection div {
 	position: absolute;
-}
-
-
-.header {
-	top: 14%;
-	right: 12%;
-	color:white;
-}
-
-.header h3 {
-	font-size: xx-large;
-	font-weight: lighter;
-}
-
-.header p {
-	font-family: 'Magneto', sans-serif;
-	font-size: x-large;
-	margin-top: -22%;/* keine gute Lösung!*/
-	margin-right: -50%;/* keine gute Lösung!*/
 }
 
 /*--------------------------------*/

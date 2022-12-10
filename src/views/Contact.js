@@ -3,6 +3,7 @@ import { useState } from "react";
 import Bottles from "../assets/Bottles.JPG";
 import { Box, TextField, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import validator from "validator";
 import "./views.css";
 
 const FormFields = styled(TextField, {
@@ -12,18 +13,16 @@ const FormFields = styled(TextField, {
   width: props.fieldWidth || "100%",
   fontFamily: '"Verdana"',
   "& label.Mui-focused": {
-    // Schriftfarbe placeholder
+    // color label aka placeholder on focus
     color: "#282c34",
   },
   "& .MuiOutlinedInput-root": {
     "&.Mui-focused fieldset": {
-      // Umrandung
+      // colo border on focus
       borderColor: "#282c34",
     },
   },
 }));
-
-// inherit from formfields and just style width... for the top input fields
 
 const StyledButton = styled(Button)({
   color: "rgba(255, 255, 255, 0.807)",
@@ -40,6 +39,7 @@ const StyledButton = styled(Button)({
 const Contact = () => {
   const contactRef = useNav("Contact");
 
+  const [errorMessage, setErrorMessage] = useState("");
   const [input, setInput] = useState({
     name: "",
     email: "",
@@ -47,7 +47,17 @@ const Contact = () => {
     message: "",
   });
 
+  const validateEmail = (e) => {
+    if (validator.isEmail(e)) setErrorMessage("");
+    else {
+      setErrorMessage("Enter valid email");
+    }
+  };
+
   function handleInput(event) {
+    if (event.target.name === "email") {
+      validateEmail(event.target.value);
+    }
     setInput({
       ...input,
       [event.target.name]: event.target.value,
@@ -91,10 +101,12 @@ const Contact = () => {
               fieldWidth="49%"
               id="form-email"
               name="email"
+              type="email"
               label="Email"
               variant="outlined"
               value={input.email}
               onChange={handleInput}
+              helperText={errorMessage ? errorMessage : ""}
             />
           </div>
           <FormFields

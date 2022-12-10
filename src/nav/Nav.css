@@ -3,11 +3,13 @@ nav {
 	position: sticky;
 	z-index: 10;
 	top: 0;
-	padding: 1.2em 0;
 	color: white;
 	font-weight: bolder;
 	background-color: #151515;
 	max-height: 4em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 nav span {
@@ -39,3 +41,21 @@ nav span.activeClass i {
 nav span.activeClass {
 	border-bottom-color: var(--lightAccent);
 }
+
+.logo {
+	padding-right: 5vw;
+	margin: 0;
+}
+
+.logo h3 {
+	font-size: x-large;
+	font-weight: 100;
+	line-height: 0;
+}
+
+.logo p {
+	font-family: 'Magneto', sans-serif;
+	font-size: large;
+	line-height: 0;
+	margin-left: 40%;
+} 

@@ -11,10 +11,6 @@ const Home = () => {
         src={DenisCloseUp}
         alt="denis-fröbel pouring a cocktail"
       />
-      <div className="header">
-        <h3>Denis Fröbel</h3>
-        <p>Barkeeper</p>
-      </div>
     </section>
   );
 };
