@@ -59,3 +59,32 @@ nav span.activeClass {
 	line-height: 0;
 	margin-left: 40%;
 } 
+
+/*------------------------------------*/
+
+@media screen and (max-width: 750px) {
+	nav {
+		font-weight: lighter;
+		font-size: small;
+	}
+	
+	nav span {
+		font-size: 15px;
+		padding-bottom: 0.2em;
+		padding-left: 3vw;
+		margin: 0;
+	}
+	
+	nav span#Home {
+		padding-left: 0.2vw;
+	}
+	
+	.logo h3 {
+		font-size: 12px;
+	}
+	
+	.logo p {
+		font-size: 10px;
+		margin-left: 20%;
+	} 
+}

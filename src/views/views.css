@@ -132,10 +132,4 @@ form * {
 		width: auto;
 		max-width: 100vw;
 	}
-
-	.header {
-		top: 1%;
-		right: 12%;
-		color:white;
-	}
 }
