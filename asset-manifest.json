@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/denis/static/css/main.76afb3d7.css",
-    "main.js": "/denis/static/js/main.677ccb91.js",
+    "main.css": "/denis/static/css/main.b147f38a.css",
+    "main.js": "/denis/static/js/main.18676a5e.js",
     "static/media/Bottles.JPG": "/denis/static/media/Bottles.3b7a101c2ecb4dd71a0f.JPG",
     "static/media/specialties.JPG": "/denis/static/media/specialties.07ec42efe02a89e6c797.JPG",
     "static/media/DenisAtBar.JPG": "/denis/static/media/DenisAtBar.0376fdabfe89ed20f08e.JPG",
-    "static/media/DenisCloseUp.JPG": "/denis/static/media/DenisCloseUp.bc321f4720510bd570fe.JPG",
+    "static/media/DenisCloseUp.JPG": "/denis/static/media/DenisCloseUp.49edd7e9c068ce643848.JPG",
     "static/media/Feier.jpg": "/denis/static/media/Feier.b2795977051ed6f371ca.jpg",
     "index.html": "/denis/index.html",
-    "main.76afb3d7.css.map": "/denis/static/css/main.76afb3d7.css.map",
-    "main.677ccb91.js.map": "/denis/static/js/main.677ccb91.js.map"
+    "main.b147f38a.css.map": "/denis/static/css/main.b147f38a.css.map",
+    "main.18676a5e.js.map": "/denis/static/js/main.18676a5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.76afb3d7.css",
-    "static/js/main.677ccb91.js"
+    "static/css/main.b147f38a.css",
+    "static/js/main.18676a5e.js"
   ]
 }
