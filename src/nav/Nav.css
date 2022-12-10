@@ -62,7 +62,7 @@ nav span.activeClass {
 
 /*------------------------------------*/
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 720px) {
 	nav {
 		font-weight: lighter;
 		font-size: small;
