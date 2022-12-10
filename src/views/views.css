@@ -13,6 +13,7 @@ section img {
 	position: relative;
 	text-align: center;
 	overflow: hidden;
+	background-color: #151515;
 }
 
 .topSection div {
@@ -75,7 +76,6 @@ section img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* flex-wrap: wrap; */
 }
 
 form {
@@ -173,7 +173,6 @@ form * {
 		flex-direction: column;
 	} */
 }
-
 
 /*--------------------------------*/
 
