@@ -71,8 +71,8 @@ nav span.activeClass {
 	nav span {
 		font-size: 15px;
 		padding-bottom: 0.2em;
-		padding-left: 3vw;
 		margin: 0;
+		margin-left: 3vw;
 	}
 	
 	nav span#Home {
