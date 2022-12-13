@@ -22,7 +22,7 @@ nav span {
 }
 
 nav span#Home {
-	padding-left: 1vw;
+	margin-left: 2vw;
 }
 
 nav span:hover {
