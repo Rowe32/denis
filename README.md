@@ -1,6 +1,8 @@
 # DENIS FRÖBEL - Barkeeper
 ***
 
+![grafik](https://user-images.githubusercontent.com/90282261/207413146-6c33382c-7f65-44f0-9509-13a8e60b7024.png)
+
 ## Description
 
 This is an idea for a personal website to present information (in this case for a professional barkeeper).
