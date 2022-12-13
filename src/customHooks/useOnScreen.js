@@ -7,12 +7,11 @@ export const useOnScreen = (ref) => {
   ];
 
   const [isOnScreen, setOnScreen] = useState(false);
+  //IntersectionObserver Web API used to create observer
+  //observer "notifies" if target intersects with field of view
 
   const observer = new IntersectionObserver(
-    //IntersectionObserver Web API used to create observer
-    //observer "notifies" if target intersects with field of view
-    
-    ([entry]) => setOnScreen(entry.isIntersecting), 
+    ([entry]) => setOnScreen(entry.isIntersecting),
     // observer's callback tracks each ContainerRef when entering viewport
     {
       threshold: tenBreakpointThreshold,
