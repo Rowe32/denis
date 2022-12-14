@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/denis/static/css/main.4b3e358b.css",
+    "main.css": "/denis/static/css/main.5487a222.css",
     "main.js": "/denis/static/js/main.18676a5e.js",
     "static/media/Bottles.JPG": "/denis/static/media/Bottles.3b7a101c2ecb4dd71a0f.JPG",
     "static/media/specialties.JPG": "/denis/static/media/specialties.07ec42efe02a89e6c797.JPG",
@@ -8,11 +8,11 @@
     "static/media/DenisCloseUp.JPG": "/denis/static/media/DenisCloseUp.49edd7e9c068ce643848.JPG",
     "static/media/Feier.jpg": "/denis/static/media/Feier.b2795977051ed6f371ca.jpg",
     "index.html": "/denis/index.html",
-    "main.4b3e358b.css.map": "/denis/static/css/main.4b3e358b.css.map",
+    "main.5487a222.css.map": "/denis/static/css/main.5487a222.css.map",
     "main.18676a5e.js.map": "/denis/static/js/main.18676a5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b3e358b.css",
+    "static/css/main.5487a222.css",
     "static/js/main.18676a5e.js"
   ]
 }
