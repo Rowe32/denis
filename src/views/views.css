@@ -108,13 +108,9 @@ form * {
 	}
 
 	section img {
-		height: auto;
-		width: auto;
-		max-width: 100vw;
-	}
-
-	.topSection {
-		height: auto;
+		height: 100vh;
+		width: 100vw;
+		object-fit: cover;
 	}
 
 	.middleSection,
